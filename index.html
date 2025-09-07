@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Юридичний гурток #254</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-color: #fdf6ee; /* ніжний кремовий */
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Верхня панель */
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #fdf6ee;
+      padding: 10px 20px;
+      border-bottom: 2px solid #ddd;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .top-bar .left {
+      font-weight: bold;
+      font-size: 18px;
+      color: #1e3a8a;
+    }
+
+    /* Анімаційний прапор */
+    .flag {
+      width: 80px;
+      height: 48px;
+      background: linear-gradient(to bottom, #0057b7 50%, #ffdd00 50%);
+      border: 1px solid #333;
+      position: relative;
+      overflow: hidden;
+    }
+    .flag::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 200%;
+      height: 100%;
+      background: linear-gradient(to right, rgba(255,255,255,0.3) 0%, transparent 50%, rgba(255,255,255,0.3) 100%);
+      animation: wave 2s infinite linear;
+    }
+    @keyframes wave {
+      from { transform: translateX(-50%); }
+      to   { transform: translateX(0); }
+    }
+
+    /* Шапка */
+    header {
+      text-align: center;
+      padding: 40px 20px;
+    }
+    header h1 {
+      font-size: 2.2em;
+      margin-bottom: 10px;
+      color: #1e3a8a;
+    }
+    header p {
+      font-size: 1.2em;
+      color: #444;
+    }
+
+    /* Контент */
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      color: #1e3a8a;
+      border-left: 5px solid #1e3a8a;
+      padding-left: 10px;
+      margin-bottom: 15px;
+    }
+    ul {
+      list-style: "⚖️ ";
+      padding-left: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      margin-top: 20px;
+    }
+
+    footer {
+      background: #1e3a8a;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+    a {
+      color: #1e3a8a;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Галерея */
+    .gallery {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+    .gallery img {
+      width: 280px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Верхня панель -->
+  <div class="top-bar">
+    <div class="left">#254</div>
+    <div class="flag"></div>
+  </div>
+
+  <!-- Шапка -->
+  <header>
+    <h1>Юридичний гурток спеціалізованої школи №254</h1>
+    <p>Знання, які формують майбутнє</p>
+  </header>
+
+  <!-- Опис -->
+  <section>
+    <h2>Про гурток</h2>
+    <p>
+      Юридичний гурток — це унікальна можливість для учнів розвивати критичне мислення,
+      вчитися аналізувати правові ситуації та відкривати для себе світ права у цікавій і доступній формі.
+    </p>
+  </section>
+
+  <section>
+    <h2>Що дає участь?</h2>
+    <ul>
+      <li>Розвиток логічного та аналітичного мислення</li>
+      <li>Ознайомлення з основами права та прав людини</li>
+      <li>Практичні навички через рольові ігри та моделювання судових процесів</li>
+      <li>Підготовку до олімпіад, конкурсів та правових турнірів</li>
+      <li>Формування навичок публічних виступів і дискусій</li>
+      <li>Корисний старт для підготовки до вступу у вищі навчальні заклади</li>
+    </ul>
+  </section>
+
+  <!-- Контакти -->
+  <section class="card">
+    <h2>Контакти</h2>
+    <p>Керівник гуртка: <strong>Компанець Артем Сергійович</strong></p>
+    <p>Телефон: <a href="tel:+380660773704">066 077 37 04</a></p>
+    <p>Telegram-група: <a href="https://t.me/+anSQn_qFVis0MGIy" target="_blank">Приєднатися</a></p>
+  </section>
+
+  <!-- Галерея школи -->
+  <section>
+    <h2>Наша школа</h2>
+    <div class="gallery">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/School_building_Kyiv.jpg" alt="Школа 254 Київ">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/92/School_in_Kyiv.jpg" alt="Школа Київ">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Modern_school_building.jpg" alt="Сучасна школа">
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Юридичний гурток спеціалізованої школи №254</p>
+  </footer>
+
+</body>
+</html>
